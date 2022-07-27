@@ -12,11 +12,11 @@ public class Main {
             System.out.println("Can not insert!!!");
             return;
         }
-        System.out.printf("Old array: ");
+        System.out.printf("%-5s","Old array: ");
         for ( int value : array){
             System.out.printf("%-3d",value);
         }
-        System.out.printf("%-3d","New array");
+        System.out.printf("%n%-5s","New array: ");
         System.arraycopy(array, i, array, i+1, array.length - 1 - i);
         array[i]= x;
         for (int value: array) {
